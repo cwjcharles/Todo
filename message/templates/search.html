@@ -1,0 +1,19 @@
+<html>
+
+<head></head>
+
+<body>
+    <div align="center">
+        <h1>User Message Search</h1>
+        <h2>{{ message }}</h2>
+        <form method="post">
+            <input type="text" name="username" placeholder="Input The Username You Want To Search">
+            <br>
+            <input type="submit" name="submit" value="submit"/>
+            <input type="reset" name="reset" value="reset">
+        </form>
+        {% for message in contents %} {{message.content}}<br> {% endfor %}
+    </div>
+</body>
+
+</html>
